@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Header/Header"
-import { products } from "../../public/data/Products";
+import { productsData } from "../../public/data/Products";
 
 // Configurar fonte local baixada
 const cormorantGaramond = localFont({
@@ -21,6 +21,12 @@ const cormorantGaramond = localFont({
     display: "swap",
 });
 
+export const metadata = { 
+  title: 'Loja de Eletrônicos',
+  description: 'Revisão de Front-end, transformando HTML para Next.js 15.'
+  }
+
+  
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR" className={cormorantGaramond.variable}>
@@ -28,7 +34,7 @@ export default function RootLayout({ children }) {
                 <Header
                 title={ "Loja de Eletrônicos"}
                 subtitle={"Os melhores produtos com os melhores preços!"}
-                totalProdutos={products.length} />
+                totalProdutos={productsData.length} />
                 <main>{children}</main>
             </body>
         </html>

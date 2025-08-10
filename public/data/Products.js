@@ -1,4 +1,4 @@
-export const products = [
+export const productsData = [
     {
         id: 1,
         title: 'iPhone 15 Pro Max 256GB',
