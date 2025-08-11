@@ -1,6 +1,13 @@
+.container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    align-items: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: start;
 }
